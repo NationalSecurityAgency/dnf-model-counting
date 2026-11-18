@@ -317,5 +317,5 @@ int main() {
     return 0;
 }
 
-// g++ -lgmp -I include/ -O3 -o count count.cpp rand.cpp counthelp.cpp
+// g++ -I include/ -O3 -o count count.cpp rand.cpp counthelp.cpp -lgmp
 

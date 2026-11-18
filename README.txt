@@ -21,7 +21,10 @@ Installation
 
 2. C++ Compilation
 
-    g++ -lgmp -I include/ -O3 -o count count.cpp rand.cpp counthelp.cpp
+    g++ -I include/ -O3 -o count count.cpp rand.cpp counthelp.cpp -lgmp
+
+    or run make. make test builds count and checks its estimate for test.dnf
+    against the exact value.
 
     counthelp.cpp defines many subroutines useful for logical formulations, 
     such as Lazy Assignments for a sampled clause and SAT checking.
